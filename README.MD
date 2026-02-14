@@ -91,8 +91,8 @@ Top models tuned:
 
 GridSearchCV configuration:
 
-cv = 5
-scoring = "roc_auc"
+cv = 5 ,
+scoring = "roc_auc" , 
 n_jobs = -1
 
 
@@ -104,8 +104,8 @@ n_jobs = -1
 
 Best Parameters:
 
-learning_rate = 0.05
-max_depth = 2
+learning_rate = 0.05 ,
+max_depth = 2 , 
 n_estimators = 200
 
 
@@ -113,53 +113,11 @@ n_estimators = 200
 
 ## Final Test Performance (Unseen Data)
 
-Accuracy = 0.7991
-ROC-AUC = 0.8457
+Accuracy = 0.7991 , 
+ROC-AUC = 0.8457 ,
 PR-AUC = 0.6624
 
 Cross-Validation ROC-AUC: 0.8493
-
-
-Generalization gap is minimal → Stable model.
-
----
-
-## Feature Importance (Top Drivers of Churn)
-
-| Feature                          | Importance |
-|----------------------------------|------------|
-| Contract_Month-to-month          | 0.3548     |
-| tenure                           | 0.1711     |
-| InternetService_Fiber optic      | 0.1228     |
-| OnlineSecurity_No                | 0.0811     |
-| TechSupport_No                   | 0.0582     |
-| PaymentMethod_Electronic check   | 0.0574     |
-| TotalCharges                     | 0.0499     |
-| MonthlyCharges                   | 0.0411     |
-
-### Business Insight
-
-- Month-to-month contracts have highest churn risk.
-- Low tenure customers are more likely to churn.
-- Lack of security or tech support increases churn probability.
-
----
-
-## Key Concepts Demonstrated
-
-- Bias vs Variance tradeoff
-- Bagging vs Boosting
-- Random Forest variance reduction
-- Gradient Boosting bias reduction
-- ROC-AUC vs PR-AUC comparison
-- Cross Validation for model selection
-- Hyperparameter tuning without test leakage
-- Proper ML pipeline design
-- Feature importance interpretation
-
----
-
-## Project Structure
 
 
 Generalization gap is minimal → Stable model.
