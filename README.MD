@@ -162,7 +162,7 @@ Generalization gap is minimal → Stable model.
 ## Project Structure
 
 customer-churn-ml/
-│
+│  
 ├── main.py  
 ├── README.md <br>
 ├── requirements.txt  
