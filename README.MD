@@ -77,7 +77,7 @@ Models evaluated:
 
 Evaluation metric:
 
-scoring = "roc_auc"
+- scoring = "roc_auc"
 
 
 ---
@@ -91,9 +91,9 @@ Top models tuned:
 
 GridSearchCV configuration:
 
-cv = 5 ,
-scoring = "roc_auc" , 
-n_jobs = -1
+- cv = 5 
+- scoring = "roc_auc" 
+- n_jobs = -1
 
 
 ---
@@ -104,20 +104,20 @@ n_jobs = -1
 
 Best Parameters:
 
-learning_rate = 0.05 ,
-max_depth = 2 , 
-n_estimators = 200
+- learning_rate = 0.05 
+- max_depth = 2 
+- n_estimators = 200
 
 
 ---
 
 ## Final Test Performance (Unseen Data)
 
-Accuracy = 0.7991 , 
-ROC-AUC = 0.8457 ,
-PR-AUC = 0.6624
+- Accuracy = 0.7991 
+- ROC-AUC = 0.8457
+- PR-AUC = 0.6624
 
-Cross-Validation ROC-AUC: 0.8493
+- Cross-Validation ROC-AUC: 0.8493
 
 
 Generalization gap is minimal → Stable model.
@@ -163,9 +163,9 @@ Generalization gap is minimal → Stable model.
 
 customer-churn-ml/
 │
-├── main.py
-├── README.md
-├── requirements.txt
+├── main.py  
+├── README.md <br>
+├── requirements.txt  
 └── data/
 
 
